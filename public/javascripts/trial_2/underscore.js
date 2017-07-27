@@ -1,5 +1,5 @@
 
-import _ from '../lib/underscore-min';
+import _ from '../lib/underscore';
 
 export function do_underscore() {
   var list = [1, 2, 3];
