@@ -7,3 +7,10 @@ func();
 var classA = new ClassA();
 classA.func();
 
+
+import {do_async} from './trial_2/async';
+import {do_underscore} from './trial_2/underscore';
+
+do_async();
+do_underscore();
+
