@@ -1,6 +1,6 @@
 
-import {func} from './func';
-import {ClassA} from './class_a';
+import {func} from './trial_1/func';
+import {ClassA} from './trial_1/class_a';
 
 func();
 

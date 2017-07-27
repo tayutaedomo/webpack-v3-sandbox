@@ -69,15 +69,15 @@
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__func__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__class_a__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__trial_1_func__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trial_1_class_a__ = __webpack_require__(2);
 
 
 
 
-Object(__WEBPACK_IMPORTED_MODULE_0__func__["a" /* func */])();
+Object(__WEBPACK_IMPORTED_MODULE_0__trial_1_func__["a" /* func */])();
 
-var classA = new __WEBPACK_IMPORTED_MODULE_1__class_a__["a" /* ClassA */]();
+var classA = new __WEBPACK_IMPORTED_MODULE_1__trial_1_class_a__["a" /* ClassA */]();
 classA.func();
 
 
