@@ -286,25 +286,14 @@ process.umask = function() { return 0; };
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__trial_1_func__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__trial_1_class_a__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__trial_2_async__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__trial_2_underscore__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__async__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__underscore__ = __webpack_require__(8);
 
 
 
 
-Object(__WEBPACK_IMPORTED_MODULE_0__trial_1_func__["a" /* func */])();
-
-var classA = new __WEBPACK_IMPORTED_MODULE_1__trial_1_class_a__["a" /* ClassA */]();
-classA.func();
-
-
-
-
-
-Object(__WEBPACK_IMPORTED_MODULE_2__trial_2_async__["a" /* do_async */])();
-Object(__WEBPACK_IMPORTED_MODULE_3__trial_2_underscore__["a" /* do_underscore */])();
+Object(__WEBPACK_IMPORTED_MODULE_0__async__["a" /* do_async */])();
+Object(__WEBPACK_IMPORTED_MODULE_1__underscore__["a" /* do_underscore */])();
 
 
 
@@ -313,41 +302,8 @@ Object(__WEBPACK_IMPORTED_MODULE_3__trial_2_underscore__["a" /* do_underscore */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = func;
-
-function func() {
-  console.log('func');
-}
-
-
-
-/***/ }),
-/* 4 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = ClassA;
-
-function ClassA() {
-  this.targets = [];
-};
-ClassA.prototype = {
-  constructor: ClassA,
-
-  func: function() {
-    console.log('ClassA.func');
-  }
-};
-
-
-
-/***/ }),
-/* 5 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = do_async;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_async__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_async__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_async___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_async__);
 
 
@@ -370,7 +326,7 @@ function do_async() {
 
 
 /***/ }),
-/* 6 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(setImmediate, process, global, module) {(function (global, factory) {
@@ -5949,10 +5905,10 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7).setImmediate, __webpack_require__(1), __webpack_require__(0), __webpack_require__(9)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5).setImmediate, __webpack_require__(1), __webpack_require__(0), __webpack_require__(7)(module)))
 
 /***/ }),
-/* 7 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var apply = Function.prototype.apply;
@@ -6005,13 +5961,13 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(8);
+__webpack_require__(6);
 exports.setImmediate = setImmediate;
 exports.clearImmediate = clearImmediate;
 
 
 /***/ }),
-/* 8 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -6204,7 +6160,7 @@ exports.clearImmediate = clearImmediate;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0), __webpack_require__(1)))
 
 /***/ }),
-/* 9 */
+/* 7 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -6232,12 +6188,12 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 10 */
+/* 8 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = do_underscore;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_underscore__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_underscore__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_underscore___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__lib_underscore__);
 
 
@@ -6253,7 +6209,7 @@ function do_underscore() {
 
 
 /***/ }),
-/* 11 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;//     Underscore.js 1.8.3
