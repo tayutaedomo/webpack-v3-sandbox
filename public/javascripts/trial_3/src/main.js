@@ -1,6 +1,14 @@
 
-import THREE from './lib/threejs/three';
+//import THREE from './lib/threejs/three';
+
 //require('./lib/threejs/examples/js/controls/OrbitControls'); // Not working
+
+// See: https://stackoverflow.com/questions/35968047/using-webpack-threejs-examples-and-typescript
+const THREE = require('./lib/threejs/three');
+// imports provides THREE to the OrbitControls example
+// exports gets THREE.OrbitControls
+THREE.OrbitControls = require('imports-loader?THREE=lib-three\/three!exports-loader?THREE.OrbitControls!lib-three-controls\/OrbitControls');
+
 
 var scene = new THREE.Scene();
 
@@ -40,5 +48,5 @@ function render() {
 }
 render();
 
-//var controls = new THREE.OrbitControls(camera);
+var controls = new THREE.OrbitControls(camera);
 

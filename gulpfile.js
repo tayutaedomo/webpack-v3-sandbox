@@ -47,10 +47,10 @@ gulp.task('trial_3', function() {
 
   return webpackStream(webpackConfig, webpack)
     .pipe(concat('bundle.min.js'))
-    .pipe(uglify({
-      mangle: false,
-      output: { comments: saveLicense }
-    }))
+    // .pipe(uglify({// TODO: Error occurred
+    //   mangle: false,
+    //   output: { comments: saveLicense }
+    // }))
     .pipe(gulp.dest('public/javascripts/trial_3/dist'));
 });
 
