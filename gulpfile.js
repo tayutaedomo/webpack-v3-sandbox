@@ -34,11 +34,11 @@ gulp.task('trial_2', function() {
       mangle: false,
       output: { comments: saveLicense }
     }))
-    .pipe(gulp.dest('public/javascripts/trial_2'));
+    .pipe(gulp.dest('public/javascripts/trial_2/dist'));
 });
 
 const trial_2_js_files = [
-  'public/javascripts/trial_2/*'
+  'public/javascripts/trial_2/src/*'
 ];
 
 
