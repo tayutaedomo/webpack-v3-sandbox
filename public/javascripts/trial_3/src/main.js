@@ -14,15 +14,15 @@ var scene = new THREE.Scene();
 
 var fov = 75;
 
-var height = 600; // 縦幅
-var width = 400; // 横幅
+var height = 600;
+var width = 400;
 var aspect = height/width;
 
 var near = 1;
 var far = 1000;
 
 var camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
-camera.position.set(0, 0, 70); // (x, y, z)
+camera.position.set(0, 0, 70);
 
 var renderer = new THREE.WebGLRenderer();
 renderer.setSize(height, width);
