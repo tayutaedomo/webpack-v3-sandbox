@@ -17,11 +17,11 @@ gulp.task('trial_1', function() {
       //preserveComments: 'some' // Error occurred
       output: { comments: saveLicense }
     }))
-    .pipe(gulp.dest('public/javascripts/trial_1'));
+    .pipe(gulp.dest('public/javascripts/trial_1/dist'));
 });
 
 const trial_1_js_files = [
-  'public/javascripts/trial_1/*'
+  'public/javascripts/trial_1/src/*'
 ];
 
 
