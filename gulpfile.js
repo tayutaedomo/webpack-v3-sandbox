@@ -1,13 +1,13 @@
-const gulp = require("gulp");
+const gulp = require('gulp');
 const uglify = require('gulp-uglify');
 const saveLicense = require('uglify-save-license');
 const concat = require('gulp-concat');
-const webpackStream = require("webpack-stream");
-const webpack = require("webpack");
+const webpackStream = require('webpack-stream');
+const webpack = require('webpack');
 
-const webpackConfig = require("./webpack.config");
+const webpackConfig = require('./webpack.config');
 
-gulp.task("default", function() {
+gulp.task('trial_1', function() {
   return webpackStream(webpackConfig, webpack)
     .pipe(concat('bundle.min.js'))
     .pipe(uglify({
@@ -17,21 +17,25 @@ gulp.task("default", function() {
       //preserveComments: 'some' // Error occurred
       output: { comments: saveLicense }
     }))
-    .pipe(gulp.dest("public/javascripts/"));
+    .pipe(gulp.dest('public/javascripts/trial_1'));
 });
 
-
-const js_files = [
-  'public/javascripts/lib/*',
-  'public/javascripts/trial_1/*',
-  'public/javascripts/trial_2/*',
-  'public/javascripts/main.js',
+const trial_1_js_files = [
+  'public/javascripts/trial_1/*'
 ];
 
+
+// const js_files = [
+//   'public/javascripts/lib/*',
+//   'public/javascripts/trial_1/*',
+//   'public/javascripts/trial_2/*',
+//   'public/javascripts/main.js',
+// ];
+
 gulp.task('w', function() {
-  let watch_js = gulp.watch(js_files, ['default']);
+  let watch_js = gulp.watch(trial_1_js_files, ['trial_1']);
   watch_js.on('change', function(event){
-    console.log('javascript File ' + event.path + ' was ' + event.type + ', running task default...');
+    console.log('javascript File ' + event.path + ' was ' + event.type + ', running task trial_1...');
   });
 });
 
