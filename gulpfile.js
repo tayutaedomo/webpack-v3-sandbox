@@ -42,6 +42,23 @@ const trial_2_js_files = [
 ];
 
 
+gulp.task('trial_3', function() {
+  const webpackConfig = require('./public/javascripts/trial_3/webpack.config');
+
+  return webpackStream(webpackConfig, webpack)
+    .pipe(concat('bundle.min.js'))
+    .pipe(uglify({
+      mangle: false,
+      output: { comments: saveLicense }
+    }))
+    .pipe(gulp.dest('public/javascripts/trial_3/dist'));
+});
+
+const trial_3_js_files = [
+  'public/javascripts/trial_3/src/*'
+];
+
+
 gulp.task('w', function() {
   let watch_trial_1 = gulp.watch(trial_1_js_files, ['trial_1']);
   watch_trial_1.on('change', function(event){
@@ -51,6 +68,11 @@ gulp.task('w', function() {
   let watch_trail_2 = gulp.watch(trial_2_js_files, ['trial_2']);
   watch_trail_2.on('change', function(event){
     console.log('javascript File ' + event.path + ' was ' + event.type + ', running task trial_2...');
+  });
+
+  let watch_trail_3 = gulp.watch(trial_3_js_files, ['trial_3']);
+  watch_trail_3.on('change', function(event){
+    console.log('javascript File ' + event.path + ' was ' + event.type + ', running task trial_3...');
   });
 });
 
