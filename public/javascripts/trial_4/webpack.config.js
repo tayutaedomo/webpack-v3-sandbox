@@ -13,6 +13,17 @@ module.exports = {
         use: [
           'imports-loader'
         ]
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
+      },
+      {
+        test: /.(png|woff(2)?|eot|ttf|svg)$/,
+        loader: 'url-loader?limit=100000'
       }
     ],
   },

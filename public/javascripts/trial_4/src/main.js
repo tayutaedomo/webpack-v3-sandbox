@@ -1,4 +1,6 @@
 
+import './lib/videojs/css/video-js.css';
+
 const videojs = require('./lib/videojs/video');
 window.videojs = videojs;
 
