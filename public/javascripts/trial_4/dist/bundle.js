@@ -96,8 +96,15 @@ module.exports = g;
 
 
 const videojs = __webpack_require__(2);
+window.videojs = videojs;
+
 //require('imports-loader?videojs=lib-videojs\/video!./lib/videojs-contrib-hls/videojs-contrib-hls.min');
 __webpack_require__(3);
+
+//var player = videojs('example-video');
+var element = document.getElementById('example-video');
+var player = videojs(element);
+player.play();
 
 
 
