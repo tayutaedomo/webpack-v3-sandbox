@@ -8,7 +8,8 @@
   },
   "scripts": {
     "start": "node ./bin/www",
-    "build": "./node_modules/.bin/webpack"
+    "build": "./node_modules/.bin/gulp build_all",
+    "watch": "./node_modules/.bin/gulp w"
   },
   "dependencies": {
     "async": "^2.5.0",
