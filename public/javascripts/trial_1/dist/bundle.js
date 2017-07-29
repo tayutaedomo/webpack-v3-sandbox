@@ -60,43 +60,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__func__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__class_a__ = __webpack_require__(2);
-
-
-
-
-Object(__WEBPACK_IMPORTED_MODULE_0__func__["a" /* func */])();
-
-var classA = new __WEBPACK_IMPORTED_MODULE_1__class_a__["a" /* ClassA */]();
-classA.func();
-
-
-
-/***/ }),
-/* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = func;
-
-function func() {
-  console.log('func');
-}
-
-
-
-/***/ }),
-/* 2 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -110,7 +78,75 @@ ClassA.prototype = {
 
   func: function() {
     console.log('ClassA.func');
+  },
+
+  func2: function() {
+    console.log('ClassA.func2');
   }
+};
+
+
+
+/***/ }),
+/* 1 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__func__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__class_a__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__class_b__ = __webpack_require__(3);
+
+
+
+
+
+Object(__WEBPACK_IMPORTED_MODULE_0__func__["a" /* func */])();
+
+var classA = new __WEBPACK_IMPORTED_MODULE_1__class_a__["a" /* ClassA */]();
+classA.func();
+classA.func2();
+
+var classB = new __WEBPACK_IMPORTED_MODULE_2__class_b__["a" /* ClassB */]();
+classB.func();
+classB.func2();
+
+
+
+/***/ }),
+/* 2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = func;
+
+function func() {
+  console.log('func');
+}
+
+
+
+/***/ }),
+/* 3 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = ClassB;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__class_a__ = __webpack_require__(0);
+
+
+
+function ClassB() {
+  __WEBPACK_IMPORTED_MODULE_0__class_a__["a" /* ClassA */].call(this);
+
+  this.targets = [];
+};
+
+ClassB.prototype = Object.create(__WEBPACK_IMPORTED_MODULE_0__class_a__["a" /* ClassA */].prototype);
+ClassB.prototype.constructor = ClassB;
+
+ClassB.prototype.func2 = function() {
+  console.log('ClassB.func2');
 };
 
 

@@ -7,6 +7,10 @@ ClassA.prototype = {
 
   func: function() {
     console.log('ClassA.func');
+  },
+
+  func2: function() {
+    console.log('ClassA.func2');
   }
 };
 

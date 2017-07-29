@@ -21,7 +21,7 @@ $ npm run watch
 
 
 # Trials
-## 1
+## Trial 1
 Try to import Function and Class.
 
 ```
@@ -29,7 +29,7 @@ $ ./node_modules/.bin/webpack --config public/javascripts/trial_1/webpack.config
 $ ./node_modules/.bin/gulp trial_1
 ```
 
-## 2
+## Trial 2
 Try to import npm module and local lib.
 
 ```
@@ -37,7 +37,7 @@ $ ./node_modules/.bin/webpack --config public/javascripts/trial_2/webpack.config
 $ ./node_modules/.bin/gulp trial_2
 ```
 
-## 3
+## Trial 3
 Try to import Three.js and Three.js examples.
 
 ```
@@ -45,7 +45,7 @@ $ ./node_modules/.bin/webpack --config public/javascripts/trial_3/webpack.config
 $ ./node_modules/.bin/gulp trial_3
 ```
 
-## 4
+## Trial 4
 Try to import Video.js and videojs-contrib-hls.
 
 ```
