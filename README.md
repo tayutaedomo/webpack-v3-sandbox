@@ -46,7 +46,7 @@ $ ./node_modules/.bin/gulp trial_3
 ```
 
 ## Trial 4
-Try to import Video.js and videojs-contrib-hls.
+Try to import video.js, videojs-contrib-hls and css.
 
 ```
 $ ./node_modules/.bin/webpack --config public/javascripts/trial_4/webpack.config.js
