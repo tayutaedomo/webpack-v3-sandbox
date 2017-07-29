@@ -69,10 +69,10 @@ gulp.task('build_trial_4', function() {
 
   return webpackStream(webpackConfig, webpack)
     .pipe(concat('bundle.min.js'))
-    .pipe(uglify({
-      mangle: false,
-      output: { comments: saveLicense }
-    }))
+    // .pipe(uglify({// TODO: Error occurred
+    //   mangle: false,
+    //   output: { comments: saveLicense }
+    // }))
     .pipe(gulp.dest('public/javascripts/trial_4/dist'));
 });
 
