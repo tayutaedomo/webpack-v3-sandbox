@@ -1,7 +1,10 @@
+'use strict';
 
-import {do_async} from './async';
-import {do_underscore} from './underscore';
+import {doAsync} from './async';
+import {doUnderscore} from './underscore';
+import {doCanvasloader} from './canvasloader';
 
-do_async();
-do_underscore();
+doAsync();
+doUnderscore();
+doCanvasloader();
 

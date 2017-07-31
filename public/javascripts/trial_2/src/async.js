@@ -1,7 +1,6 @@
-
 import async from 'async';
 
-export function do_async() {
+export function doAsync() {
   async.series([
     function(callback) {
       console.log('async.series 1');
