@@ -96,6 +96,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__func__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__class_a__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__class_b__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__const__ = __webpack_require__(4);
+
 
 
 
@@ -110,6 +112,8 @@ classA.func2();
 var classB = new __WEBPACK_IMPORTED_MODULE_2__class_b__["a" /* ClassB */]();
 classB.func();
 classB.func2();
+
+console.log(__WEBPACK_IMPORTED_MODULE_3__const__["a" /* Const */].FOO);
 
 
 
@@ -148,6 +152,20 @@ ClassB.prototype.constructor = ClassB;
 ClassB.prototype.func2 = function() {
   console.log('ClassB.func2');
 };
+
+
+
+/***/ }),
+/* 4 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+const Const = {};
+/* harmony export (immutable) */ __webpack_exports__["a"] = Const;
+
+
+Const.FOO = 'Foo';
 
 
 

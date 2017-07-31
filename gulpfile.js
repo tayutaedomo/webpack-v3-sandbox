@@ -15,13 +15,13 @@ gulp.task('build_trial_1', function() {
 
   return webpackStream(webpackConfig, webpack)
     .pipe(concat('bundle.min.js'))
-    .pipe(uglify({
-      mangle: false,
-      //compress: true,
-      //beautify: true,
-      //preserveComments: 'some' // Error occurred
-      output: { comments: saveLicense }
-    }))
+    // .pipe(uglify({
+    //   mangle: false,
+    //   //compress: true,
+    //   //beautify: true,
+    //   //preserveComments: 'some' // Error occurred
+    //   output: { comments: saveLicense }
+    // }))
     .pipe(gulp.dest('public/javascripts/trial_1/dist'));
 });
 
