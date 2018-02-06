@@ -76,12 +76,29 @@ gulp.task('build_trial_4', function() {
     .pipe(gulp.dest('public/javascripts/trial_4/dist'));
 });
 
+const trial_5_files = [
+  'public/javascripts/trial_5/src/*'
+];
+
+gulp.task('build_trial_5', function() {
+  const webpackConfig = require('./public/javascripts/trial_5/webpack.config');
+
+  return webpackStream(webpackConfig, webpack)
+    .pipe(concat('bundle.min.js'))
+    // .pipe(uglify({// TODO: Error occurred
+    //   mangle: false,
+    //   output: { comments: saveLicense }
+    // }))
+    .pipe(gulp.dest('public/javascripts/trial_5/dist'));
+});
+
 
 gulp.task('build_all', [
   'build_trial_1',
   'build_trial_2',
   'build_trial_3',
-  'build_trial_4'
+  'build_trial_4',
+  'build_trial_5'
 ]);
 
 
@@ -104,6 +121,11 @@ gulp.task('w', function() {
   let watch_trail_4 = gulp.watch(trial_4_files, ['build_trial_4']);
   watch_trail_4.on('change', function(event){
     console.log('javascript File ' + event.path + ' was ' + event.type + ', running task build_trial_4...');
+  });
+
+  let watch_trail_5 = gulp.watch(trial_5_files, ['build_trial_5']);
+  watch_trail_5.on('change', function(event){
+    console.log('javascript File ' + event.path + ' was ' + event.type + ', running task build_trial_5...');
   });
 });
 

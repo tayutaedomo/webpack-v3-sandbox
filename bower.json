@@ -1,0 +1,15 @@
+{
+  "name": "webpack-v3-sandbox",
+  "description": "",
+  "main": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "PreloadJS": "^1.0.1"
+  }
+}

@@ -53,3 +53,11 @@ $ ./node_modules/.bin/webpack --config public/javascripts/trial_4/webpack.config
 $ ./node_modules/.bin/gulp build_trial_4
 ```
 
+## Trial 5
+Try to import PreloadJS.
+
+```
+$ ./node_modules/.bin/webpack --config public/javascripts/trial_5/webpack.config.js
+$ ./node_modules/.bin/gulp build_trial_5
+```
+
